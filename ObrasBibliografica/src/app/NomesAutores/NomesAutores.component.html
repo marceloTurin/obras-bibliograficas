@@ -1,0 +1,31 @@
+<div class="container mt-2">
+  <form>
+    <div class="form-row align-items-center">
+      <div class="col-sm-4 my-1">
+        <label class="sr-only" for="inlineFormInputName">Name</label>
+        <input type="number" class="form-control" id="numNome" #numNome (keydown.enter)="criarForms(numNome.value)" placeholder="Informe um número de autores">
+      </div>
+      <div class="col-auto my-1">
+        <button type="button" class="btn btn-primary"  (click)="criarForms(numNome.value)">Enviar</button>
+      </div>
+    </div>
+  </form>
+
+  <div id="formularioAutores" class="mt-4"></div>
+
+  <button class='btn btn-success' type='button' id="salvarNomes" (click)="salvarNomes()" style="display: none;"> Salvar </button> <br> <br>
+
+  <div id="nomesFormatados" style="display: none;">
+    <table class="table table-hover table-bordered">
+      <thead class="thead-dark">
+        <th>Nome Autor</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let obras of nomesInseriosTratados">
+          <td>{{obras.nome}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
