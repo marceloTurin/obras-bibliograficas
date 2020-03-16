@@ -38,6 +38,10 @@ SqlLite
 ## Como testar a aplicação.
 
 Primeiro baixar DB Browser for SQL: https://sqlitebrowser.org/
+
 Entrar na Pasta ObrasBibliograficasAPI no visual studio e rodar o IIS
+
 Abrir o  arquivo ObrasBibliograficas.db no DB Browser para verificar o banco.
+
 Abrir a pasta ObrasBibliografica no terminal e rodar o comando: ng serve --proxy-config proxy.config.js
+
