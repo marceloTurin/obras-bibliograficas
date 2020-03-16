@@ -27,3 +27,17 @@ As seguintes regras devem ser seguidas nesta formatação:
 Realize um fork deste repositório, desenvolva sua solução e encaminhe o seu repositório com o seu código. Arquivos compactados não serão aceitos.
 
 Altere o arquivo README para descrever quais componentes foram utilizados e como sua aplicação deverá ser executada.
+
+## Tecnologias Utilizadas
+
+.Net Core
+.EntityFrmamework
+Angular
+SqlLite
+
+## Como testar a aplicação.
+
+Primeiro baixar DB Browser for SQL: https://sqlitebrowser.org/
+Entrar na Pasta ObrasBibliograficasAPI no visual studio e rodar o IIS
+Abrir o  arquivo ObrasBibliograficas.db no DB Browser para verificar o banco.
+Abrir a pasta ObrasBibliografica no terminal e rodar o comando: ng serve --proxy-config proxy.config.js
